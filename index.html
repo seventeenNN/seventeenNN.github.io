@@ -3,52 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的GitHub主页</title>
-    <style>
-        /* 简单的样式美化 */
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .links a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #0366d6; /* GitHub蓝 */
-        }
-        .projects {
-            margin-top: 30px;
-        }
-    </style>
+    <title>[你的名字] - 个人学术主页</title>
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入本地CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>你好，我是[你的名字]</h1>
-        <p>一名热爱编程的开发者 | 专注于[你的技术方向，比如前端/后端/AI]</p>
-        <div class="links">
-            <a href="https://github.com/你的用户名" target="_blank">GitHub</a>
-            <a href="[你的博客链接，可选]" target="_blank">博客</a>
-            <a href="[你的邮箱，比如mailto:xxx@xxx.com]">邮箱</a>
+    <div class="container">
+        <!-- 头部信息（头像+基本信息） -->
+        <div class="header">
+            <img src="images/avatar.jpg" alt="个人头像" class="avatar">
+            <div class="profile">
+                <h1>[你的名字]</h1>
+                <div class="title">[你的头衔，如：XX大学计算机科学硕士研究生]</div>
+                <p>专注于[研究领域]的研究与实践，发表[X]篇学术论文，参与[X]项科研项目。</p>
+                <div class="contact">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your-email@example.com">your-email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-google"></i>
+                        <a href="https://scholar.google.com/citations?user=你的ID" target="_blank">Google Scholar</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- 关于我 -->
+        <section id="about">
+            <h2><i class="fas fa-user"></i> 关于我</h2>
+            <p>简要介绍自己的学术背景、研究兴趣和职业目标...</p>
+        </section>
+
+        <!-- 教育经历 -->
+        <section id="education">
+            <h2><i class="fas fa-graduation-cap"></i> 教育经历</h2>
+            <div class="education-item">
+                <h3>[学位名称]，[专业名称]</h3>
+                <p>[学校名称] | [起始年份] - [结束年份]</p>
+                <p class="period">导师：[导师姓名] | 研究方向：[具体方向]</p>
+            </div>
+        </section>
+
+        <!-- 学术奖励 -->
+        <section id="awards">
+            <h2><i class="fas fa-trophy"></i> 学术奖励</h2>
+            <div class="award-item">
+                <h3>[奖励名称]</h3>
+                <p>[颁发机构] | [年份]</p>
+                <p>获奖原因：[简要说明]</p>
+            </div>
+        </section>
+
+        <!-- 研究项目 -->
+        <section id="projects">
+            <h2><i class="fas fa-flask"></i> 研究项目</h2>
+            <div class="project-item">
+                <h3><a href="[项目链接]" target="_blank">[项目名称]</a></h3>
+                <p>[项目时间] | 角色：[你的角色]</p>
+                <p>项目简介：[详细描述]</p>
+                <div>
+                    <span class="project-tech">技术1</span>
+                    <span class="project-tech">技术2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能专长 -->
+        <section id="skills">
+            <h2><i class="fas fa-tools"></i> 技能专长</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>编程语言</h3>
+                    <p>Python, Java, C++, JavaScript</p>
+                </div>
+                <div>
+                    <h3>技术工具</h3>
+                    <p>Git, Docker, TensorFlow, LaTeX</p>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div class="about">
-        <h2>关于我</h2>
-        <p>简单介绍一下自己：比如你的学习/工作经历、技术栈（Python/JavaScript/Java等）、兴趣爱好等。</p>
-    </div>
-
-    <div class="projects">
-        <h2>我的项目</h2>
-        <ul>
-            <li><a href="[项目1的GitHub链接]" target="_blank">项目1名称</a> - 项目简介：比如一个Todo清单网站</li>
-            <li><a href="[项目2的GitHub链接]" target="_blank">项目2名称</a> - 项目简介：比如一个数据分析工具</li>
-        </ul>
-    </div>
+    <!-- 引入本地JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
