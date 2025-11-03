@@ -338,7 +338,7 @@ a:hover {
 }
 
 /* 语言切换相关样式 */
-.en .zh {
+/* .en .zh {
     display: none;
 }
 
@@ -352,4 +352,19 @@ a:hover {
 
 .en {
     display: none;
+} */
+
+/* 语言切换样式 - 修复版 */
+.zh, .en {
+    display: none;
+}
+
+body.zh .zh,
+body.en .en {
+    display: inline;
+}
+
+/* 默认中文 */
+body:not(.en) .zh {
+    display: inline;
 }
