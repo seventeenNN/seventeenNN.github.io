@@ -1,34 +1,17 @@
 <!DOCTYPE html>
-<!-- <html lang="zh-CN"> -->
-    <!-- index.html 等页面 <html> 标签加上 class="zh" -->
-<html lang="zh-CN" class="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yue Qin - Personal Academic Homepage</title>
+    <!-- 引入字体图标 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入本地CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">Yue Qin</a>
-            <div class="nav-links">
-                <a href="index.html#education"><i class="fas fa-graduation-cap"></i> <span class="zh">教育经历</span><span class="en">Education</span></a>
-                <a href="index.html#about"><i class="fas fa-user"></i> <span class="zh">关于我</span><span class="en">About</span></a>
-                <a href="awards.html"><i class="fas fa-trophy"></i> <span class="zh">学术奖励</span><span class="en">Awards</span></a>
-                <a href="projects.html"><i class="fas fa-flask"></i> <span class="zh">研究项目</span><span class="en">Projects</span></a>
-                <!-- <a href="index.html#skills"><i class="fas fa-tools"></i> <span class="zh">技能专长</span><span class="en">Skills</span></a> -->
-                <a href="blog.html"><i class="fas fa-blog"></i> <span class="zh">博客</span><span class="en">Blog</span></a>
-            </div>
-            <div class="language-switch">
-                <button id="lang-zh" class="lang-btn active">中</button>
-                <button id="lang-en" class="lang-btn">En</button>
-            </div>
-        </div>
-    </nav>
-
     <div class="container">
+        <!-- 头部信息（头像+基本信息） -->
         <div class="header">
             <img src="images/avatar.jpg" alt="个人头像" class="avatar">
             <div class="profile">
@@ -44,27 +27,80 @@
                         <i class="fab fa-github"></i>
                         <a href="https://github.com/seventeenNN" target="_blank">GitHub</a>
                     </div>
+                    <!-- <div class="contact-item">
+                        <i class="fab fa-google"></i>
+                        <a href="https://scholar.google.com/citations?user=你的ID" target="_blank">Google Scholar</a>
+                    </div> -->
                 </div>
             </div>
         </div>
 
+        
+        <!-- 教育经历 -->
         <section id="education">
-            <h2><i class="fas fa-graduation-cap"></i> <span class="zh">教育经历</span><span class="en">Education</span></h2>
+            <h2><i class="fas fa-graduation-cap"></i> 教育经历</h2>
             <div class="education-item">
                 <h3>[学位名称]，[专业名称]</h3>
-                <h3>Xidian University</h3>
+                <h3>Xidian University </h3>
+
                 <p>[学校名称] | [起始年份] - [结束年份]</p>
-                <p class="period"><span class="zh">导师：</span><span class="en">Supervisor：</span>[导师姓名] | <span class="zh">研究方向：</span><span class="en">Research：</span>[具体方向]</p>
+                <p class="period">导师：[导师姓名] | 研究方向：[具体方向]</p>
             </div>
         </section>
 
+        <!-- 关于我 -->
         <section id="about">
-            <h2><i class="fas fa-user"></i> <span class="zh">关于我</span><span class="en">About Me</span></h2>
-            <p><span class="zh">简要介绍自己的学术背景、研究兴趣和职业目标...</span><span class="en">Brief introduction of academic background, research interests and career goals...</span></p>
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>简要介绍自己的学术背景、研究兴趣和职业目标...</p>
         </section>
 
-        <!-- 注释掉的其他部分保持原样 -->
-        <!-- 
+        
+
+        <!-- 学术奖励 -->
+        <section id="awards">
+            <h2><i class="fas fa-trophy"></i> 学术奖励</h2>
+            <div class="award-item">
+                <h3>[奖励名称]</h3>
+                <p>[颁发机构] | [年份]</p>
+                <p>获奖原因：[简要说明]</p>
+            </div>
+        </section>
+
+        <!-- 研究项目
+        <section id="projects">
+            <h2><i class="fas fa-flask"></i> 研究项目</h2>
+            <div class="project-item">
+                <h3><a href="[项目链接]" target="_blank">[项目名称]</a></h3>
+                <p>[项目时间] | 角色：[你的角色]</p>
+                <p>项目简介：[详细描述]</p>
+                <div>
+                    <span class="project-tech">技术1</span>
+                    <span class="project-tech">技术2</span>
+                </div>
+            </div>
+        </section> -->
+
+                <!-- 研究项目 -->
+        <section id="projects">
+            <h2><i class="fas fa-flask"></i> 研究项目</h2>
+            <div class="project-item">
+                <h3>
+                    <a href="[项目链接]" target="_blank">[项目名称]</a>
+                    <!-- 新增的GitHub仓库链接 -->
+                    <a href="[你的GitHub仓库URL]" target="_blank" style="margin-left: 10px;">
+                        <i class="fab fa-github"></i> 代码仓库
+                    </a>
+                </h3>
+                <p>[项目时间] | 角色：[你的角色]</p>
+                <p>项目简介：[详细描述]</p>
+                <div>
+                    <span class="project-tech">技术1</span>
+                    <span class="project-tech">技术2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能专长 -->
         <section id="skills">
             <h2><i class="fas fa-tools"></i> 技能专长</h2>
             <div class="skills-grid">
@@ -78,9 +114,9 @@
                 </div>
             </div>
         </section>
-        -->
     </div>
 
+    <!-- 引入本地JS -->
     <script src="js/script.js"></script>
 </body>
 </html>
