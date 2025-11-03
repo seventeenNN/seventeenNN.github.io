@@ -1,3 +1,6 @@
+// script.js 开头加一行，确保默认是中文
+document.body.classList.remove('en');
+
 document.addEventListener('DOMContentLoaded', function() {
     // 平滑滚动
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
